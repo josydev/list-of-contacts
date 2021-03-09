@@ -1,0 +1,138 @@
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+
+.grid-template {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header header header"
+                       "aside main main"
+                       "footer footer footer";
+  grid-template-columns: 18rem repeat(2,auto);
+  grid-template-rows: auto 30rem auto;
+  gap: .8em;
+  @media(min-width: 320px) and (max-width: 600px) {
+    grid-template-areas: "header header header"
+    "aside aside aside"
+    "main main main";
+  }
+}
+
+header {
+grid-area: header;
+padding: .8rem;
+
+}
+
+aside {
+grid-area:aside;
+background: $grey;
+padding: .8em;
+border-radius: .4rem;
+
+
+}
+
+main {
+  grid-area: main;
+}
+
+.section-search {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-top: .8em;
+
+  @media(min-width: 320px) and (max-width: 600px) {
+    justify-content: center;
+  }
+
+}
+
+input[type="search"] {
+  width: 15rem;
+  height: 2.5em;
+}
+
+.card {
+  width: 22rem;
+  height: 20rem;
+  border-radius: $br-6;
+  border: 1px solid $default;
+
+   h4 {
+    color: $grey-2;
+    font-size: .9em;
+    text-transform: uppercase;
+    margin-top:.4em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+
+
+  h3 {
+    color: $grey;
+    font-size: .9em;
+
+    &::selection {
+      @extend %selectionBg;
+    }
+
+  }
+
+  h3 span {
+    color: $green;
+
+    &::selection {
+      @extend %selectionBg;
+    }
+
+  }
+
+  &__title {
+    font-size: 1em;
+    color: #fff;
+    border-bottom: 1px solid $default;
+    margin-bottom: .3rem;
+
+    &::selection {
+      @extend %selectionBg;
+    }
+
+  }
+
+  &__header {
+    background: $default;
+    height: calc(4rem - 1rem);
+    padding: .6rem;
+  }
+
+  &__body {
+    padding: .6rem;
+  }
+
+  @media(min-width: 320px) and (max-width: 600px) {
+    max-width: 18rem;
+  }
+
+}
+
