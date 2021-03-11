@@ -20,7 +20,7 @@ li {
                        "footer footer footer";
   grid-template-columns: 18rem repeat(2,auto);
   grid-template-rows: auto 30rem auto;
-  gap: .8em;
+  gap: $fs-8;
   @media(min-width: 320px) and (max-width: 600px) {
     grid-template-areas: "header header header"
     "aside aside aside"
@@ -37,9 +37,14 @@ padding: .8rem;
 aside {
 grid-area:aside;
 background: $grey-3;
-padding: .8em;
-border-radius: .4rem;
+padding: $fs-8;
+border-radius: $sz-4;
+padding: $sz-4;
 
+&__title {
+  font-size: 1.2em;
+  margin-bottom: .2rem;
+}
 
 }
 
@@ -57,7 +62,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: .8rem;
-  margin-top: .8em;
+  margin-top: $fs-8;
 
   @media(min-width: 320px) and (max-width: 600px) {
     justify-content: center;
@@ -68,9 +73,16 @@ main {
 input[type="search"] {
   width: 100%;
   height: 2.5em;
+  padding: $sz-4;
   margin-bottom: .8rem;
   border-radius: $br-6;
-  border: .1rem solid $default;
+  border: .1rem solid;
+  border-color: $default;
+
+  &:focus {
+    border-color: $green;
+  }
+
 }
 
 .card {
@@ -81,7 +93,7 @@ input[type="search"] {
 
    h4 {
     color: $grey-2;
-    font-size: .8em;
+    font-size: $fs-8;
     text-transform: uppercase;
     margin-top:.4em;
 
@@ -146,7 +158,7 @@ input[type="search"] {
     background: $default;
     color: $grey-3;
     border-radius:  $br-6;
-    padding: .4rem;
+    padding: $sz-4;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 1.01em;
@@ -155,11 +167,11 @@ input[type="search"] {
 ul {
   background: white;
   border-radius: 0 0 $br-6 $br-6;
-  padding: .4rem;
+  padding: $sz-4;
   box-shadow: rgb(0 0 0 / 8%) 0px 0.2rem 0.2rem;
 
   li {
-    padding: .4rem .3rem;
+    padding: $sz-4 .3rem;
     border-bottom: .1rem solid $grey;
 
     &:last-child {
