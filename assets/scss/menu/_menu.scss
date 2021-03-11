@@ -1,0 +1,55 @@
+/*Reset*/
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/*Input Search*/
+
+input[type="search"] {
+  width: 100%;
+  height: 2.5em;
+  padding: $sz-4;
+  margin-bottom: $sz-8;
+  border-radius: $br-6;
+  border: $bd-1 solid $default;
+}
+
+/*Menu - categories s*/
+.menu {
+  &__title {
+    background: $default;
+    color: $grey-3;
+    border-radius:  $br-6;
+    padding: $sz-4;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.01em;
+  }
+
+  ul {
+    background: white;
+    border-radius: 0 0 $br-6 $br-6;
+    padding: $sz-4;
+    box-shadow: $sd-primary;
+
+    li {
+      padding: $sz-4 .3rem;
+      border-bottom: $bd-1 solid $grey;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+    }
+  }
+}
+

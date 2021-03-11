@@ -1,10 +1,9 @@
 /*Grid struct*/
-
 .grid-template {
   width: 100%;
   display: grid;
   grid-template-areas: "header header header"
-                       "aside main main";
+  "aside main main";
   grid-template-columns: 18rem repeat(2,auto);
   grid-template-rows: auto 33rem auto;
   gap: 1rem;
@@ -19,22 +18,22 @@
 
 /*Head/header*/
 header {
-grid-area: header;
-padding: .8rem;
-border-bottom: .1rem solid $grey;
+  grid-area: header;
+  padding: $sz-8;
+  border-bottom: $bd-1 solid $grey;
 }
 
 /*Menu/aside*/
 aside {
-grid-area:aside;
-background: $grey-3;
-padding: $fs-8;
-border-radius: $sz-4;
+  grid-area:aside;
+  background: $grey-3;
+  padding: $fs-8;
+  border-radius: $sz-4;
 
-h2 {
-  font-size: 1.2em;
-  margin-bottom: $sz-4;
-}
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: $sz-4;
+  }
 }
 
 /*Main*/
