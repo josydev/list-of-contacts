@@ -31,7 +31,7 @@
 
     <main>
       <!-- <filter de pesquisa /> -->
-      <section class="section-search">
+      <section class="section-title">
         <h2>Leads</h2>
       </section>
 

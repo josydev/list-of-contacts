@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <section class="card">
     <div class="card__header">
       <h2 class="card__title">{{ name }}</h2>
       <h3><span>@</span>{{ username }}</h3>
@@ -8,18 +8,23 @@
     <div class="card__body">
       <h4>City</h4>
       <p>{{ city }}</p>
+
       <h4>Phone</h4>
       <p>{{ phone }}</p>
+
       <h4>Email</h4>
       <p>{{ email }}</p>
+
       <h4>Website</h4>
       <p>{{ website }}</p>
+
       <h4>Company</h4>
       <p>{{ company }}</p>
+
       <h4>Company Categorie</h4>
       <p>{{ setor }}</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -62,12 +67,6 @@ export default {
     username: {
       type: String,
       default: '-',
-    },
-  },
-
-  methods: {
-    testClick() {
-      this.indexOf()
     },
   },
 }
