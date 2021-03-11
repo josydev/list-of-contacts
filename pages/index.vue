@@ -7,25 +7,32 @@
     </header>
 
     <aside>
-      <!-- <filter das categorias /> -->
-      <h2>Categorias</h2>
-      <ul @click="select = $event.target.dataset.value">
-        <li data-value="">Todos</li>
-        <li v-for="user of list" :key="user.id" :data-value="user.company.bs">
-          {{ user.company.bs }}
-        </li>
-      </ul>
+      <h2>Search</h2>
+
+      <!-- Filtro dos nomes -->
+      <input
+        type="search"
+        class="filter"
+        placeholder="Search by name of your contact"
+        @input="filter = $event.target.value"
+      />
+
+      <!-- <filtro das categorias /> -->
+      <nav class="menu">
+        <h3 class="menu__title" @click="show = !show">Company Categories</h3>
+        <ul v-show="show" @click="select = $event.target.dataset.value">
+          <li data-value="">Todos</li>
+          <li v-for="user of list" :key="user.id" :data-value="user.company.bs">
+            {{ user.company.bs }}
+          </li>
+        </ul>
+      </nav>
     </aside>
 
     <main>
       <!-- <filter de pesquisa /> -->
       <section class="section-search">
         <h2>Leads</h2>
-        <input
-          type="search"
-          class="filter"
-          @input="filter = $event.target.value"
-        />
       </section>
 
       <!-- <Listando os Itens /> -->
@@ -41,6 +48,7 @@
           :company="user.company.name"
           :setor="user.company.bs"
           :email="user.email"
+          :website="user.website"
         ></Card>
       </article>
     </main>
@@ -55,6 +63,7 @@ export default {
       filter: '',
       select: '',
       teste: '',
+      show: true,
     }
   },
 
@@ -80,12 +89,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped="true">
-.leads {
-  &__title {
-    margin: 1.4rem 0;
-    padding: 1.4rem 0;
-    border-top: $border-color 1px solid;
-  }
-}
-</style>
+<style lang="scss" scoped="true"></style>

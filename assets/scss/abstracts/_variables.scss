@@ -3,8 +3,11 @@ $blue:  #3113F2;
 $light-blue: #3D9DF2;
 $dark-blue: #180F50;
 $green: #5EF2D7;
+$white: #fff;
 $grey: #ECF0F1;
 $grey-2: darken($grey, 40%);
+$grey-3: lighten($grey, 3%);
+
 
 /* Theme */
 $default: $dark-blue;

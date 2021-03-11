@@ -12,11 +12,12 @@
       <p>{{ phone }}</p>
       <h4>Email</h4>
       <p>{{ email }}</p>
+      <h4>Website</h4>
+      <p>{{ website }}</p>
       <h4>Company</h4>
       <p>{{ company }}</p>
       <h4>Company Categorie</h4>
       <p>{{ setor }}</p>
-      <button @click="testeClick()">click</button>
     </div>
   </div>
 </template>
@@ -35,6 +36,11 @@ export default {
     },
 
     email: {
+      type: String,
+      default: '-',
+    },
+
+    website: {
       type: String,
       default: '-',
     },
