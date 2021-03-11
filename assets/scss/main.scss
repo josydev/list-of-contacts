@@ -1,4 +1,7 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 @import 'base/reset';
 @import 'base/typography';
-@import  'card/index';
+@import 'base/default';
+@import  'card/card';
+@import 'menu/menu';
