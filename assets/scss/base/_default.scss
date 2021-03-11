@@ -1,0 +1,45 @@
+/*Grid struct*/
+
+.grid-template {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header header header"
+                       "aside main main";
+  grid-template-columns: 18rem repeat(2,auto);
+  grid-template-rows: auto 33rem auto;
+  gap: 1rem;
+
+  @media(min-width: 320px) and (max-width: 600px) {
+    grid-template-areas: "header header header"
+    "aside aside aside"
+    "main main main";
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+/*Head/header*/
+header {
+grid-area: header;
+padding: .8rem;
+border-bottom: .1rem solid $grey;
+}
+
+/*Menu/aside*/
+aside {
+grid-area:aside;
+background: $grey-3;
+padding: $fs-8;
+border-radius: $sz-4;
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: $sz-4;
+}
+}
+
+/*Main*/
+main {
+  grid-area: main;
+  padding: $sz-4;
+  padding: 0 $sz-4;
+}
