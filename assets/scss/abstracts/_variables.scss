@@ -18,13 +18,17 @@ $border-color: $grey;
 /*Radius*/
 $br-6: .29rem;
 
+/*shadows*/
+$sd-primary: rgb(0 0 0 / 8%) 0px 0.2rem 0.2rem;
+
 /*sizes*/
 $sz-4: .4rem;
+$sz-8: .8rem;
 
 /*font-sizes*/
 $fs-8: .8em;
 
-%selectionBg {
-  background-color: $secondary;
-  color: $default;
-}
+/*Borders Width*/
+$bd-09: .09rem;
+$bd-1: .1rem;
+
