@@ -1,5 +1,6 @@
 ## 💁 About
-A simple list of contacts with *two filter*s search by *names* and search by *categories*. 
+A simple list of contacts with *two filter*s search by *names* and search by *categories*.
+
 [**Demo on vercel**](https://list-of-contacts.vercel.app/)
 
 ## **How use**
