@@ -1,9 +1,9 @@
 <template>
   <div class="grid-template">
-    <header class="leads">
+    <header class="contacts">
       <Logo />
+      <h1 class="contacts__title">Prisma</h1>
       <!-- <Logo dark-background /> -->
-      <h1 class="leads__title"></h1>
     </header>
 
     <aside>
@@ -32,7 +32,7 @@
     <main>
       <!-- <filter de pesquisa /> -->
       <section class="section-title">
-        <h2>Leads</h2>
+        <h2>Contacts</h2>
       </section>
 
       <!-- <Listando os Itens /> -->
