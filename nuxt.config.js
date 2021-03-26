@@ -6,7 +6,7 @@ export default {
   },
 
   head: {
-    title: 'Vough Leads',
+    title: 'Prisma Contacts',
     htmlAttrs: {
       lang: 'en',
     },
@@ -19,7 +19,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap',
+          'https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap',
       },
     ],
   },
