@@ -1,9 +1,10 @@
 /* Colors */
-$blue:  #3113F2;
-$light-blue: #3D9DF2;
-$dark-blue: #180F50;
+$blue:  #5271FF;
+$dark-blue: #000f52;
 $green: #5EF2D7;
+$yellow: #FFDE59;
 $white: #fff;
+$red: #FF5757;
 $grey: #ECF0F1;
 $grey-2: darken($grey, 40%);
 $grey-3: lighten($grey, 3%);
@@ -12,7 +13,7 @@ $grey-3: lighten($grey, 3%);
 /* Theme */
 $default: $dark-blue;
 $primary: $blue;
-$secondary: $green;
+$secondary: $yellow;
 $border-color: $grey;
 
 /*Radius*/
@@ -26,7 +27,7 @@ $sz-4: .4rem;
 $sz-8: .8rem;
 
 /*font-sizes*/
-$fs-8: .8em;
+$fs-8: .7em;
 
 /*Borders Width*/
 $bd-09: .09rem;
